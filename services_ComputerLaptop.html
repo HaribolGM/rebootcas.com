@@ -11,39 +11,47 @@
     <div style="background-image: url(bg3.png);">
     </div>
 <header>
-  <div class="navbar">
-      <div class="dropdown">
-          <button class="dropbtn">Home</button>
-      </div>
-      <div class="dropdown" onclick="openAboutUs()">
-          <button class="dropbtn">About Us</button>
-      </div>
-      <div class="dropdown">
-          <button class="dropbtn">Services</button>
-          <div class="dropdown-content">
+    <div class="navbar">
+          <div class="logo">
+            <img src="logo.png" alt="Logo">
+          </div>
+          <div class="dropdown">
+            <div class="dropdown" onclick="openHome()">
+            <button class="dropbtn">Home</button>
+          </div>
+        </div>
+          <div class="dropdown" onclick="openAboutUs()">
+            <button class="dropbtn">About Us</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
               <a href="services_Webdev_design.html">Web Development and Designing</a>
               <a href="services_ComputerLaptop.html">Computer and Laptop Services</a>
               <a href="services_Androiddev.html">Application Development</a>
               <hr>
+            </div>
           </div>
-      </div>
-      <div class="dropdown">
-          <button class="dropbtn">Projects</button>
-          <div class="dropdown-content">
+          <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
               <a href="#">Sub 1</a>
               <a href="#">Sub 2</a>
               <a href="#">Sub 3</a>
               <hr>
+            </div>
           </div>
-      </div>
-      <div class="dropdown">
-          <button class="dropbtn">Vision</button>
-      </div>
-      <div class="dropdown">
-          <button class="dropbtn">Contact Us</button>
-      </div>
-  </div>
-</header>
+          <div class="dropdown">
+            <button class="dropbtn">Vision</button>
+          </div>
+          <div class="dropdown" onclick="openContactUs()">
+            <button class="dropbtn">Contact Us</button>
+          </div>
+          <div class="dropdown">
+          </div>
+        </div>
+      </header>
+
 <section class="main-home">
     <div class ="main-text">
     </div>
@@ -91,5 +99,17 @@
        </div>
     </div>
 </footer>
+
+<script>
+    function openAboutUs() {
+      window.location.href = "aboutus.html";
+    }
+    function openContactUs(){
+      window.location.href = "contactus.html";
+    }
+    function openHome(){
+      window.location.href = "reboot.html";
+    }
+  </script>
 </body>
 </html>

@@ -42,8 +42,10 @@
         <div class="dropdown">
           <button class="dropbtn">Vision</button>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" onclick="openContactUs()">
           <button class="dropbtn">Contact Us</button>
+        </div>
+        <div class="dropdown">
         </div>
       </div>
     </header>
@@ -58,37 +60,9 @@
 
   <hr class="short-hr">
 
-  <section class="contact-us">
-  <div class="wrapper">
-    <div class="form">
-      <div class="title">Contact Us</div>
-      <div class="subtitle"></div>
-      <div class="input-container ic1">
-        <input id="firstname" class="input" type="text" placeholder=" "required  />
-        <div class="cut"></div>
-        <label for="firstname" class="placeholder">Name</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="email" class="input" type="text" placeholder=" "required  />
-        <div class="cut"></div>
-        <label for="email" class="placeholder">Email</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="address" class="input" type="text" placeholder=" "required  />
-        <div class="cut"></div>
-        <label for="address" class="placeholder">Address</label>
-      </div>
-      <div class="input-container ic2">
-        <input id="phone" class="input" type="text" placeholder=" " required />
-        <div class="cut"></div>
-        <label for="phone" class="placeholder">Phone</label>
-      </div>
-      <button type="text" class="submit">Submit</button>
-    </div>
-  </div>
-</section>
+ 
   
-<hr class="short-hr">  
+  
 
 <section class="main-home">
     <div class ="main-text">
@@ -145,6 +119,9 @@
 <script>
   function openAboutUs() {
     window.location.href = "aboutus.html";
+  }
+  function openContactUs(){
+    window.location.href = "contactus.html";
   }
 </script>
 

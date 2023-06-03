@@ -1,3 +1,131 @@
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("bg3.png");
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("bg3.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: left;
+  margin-right:500px; /* Added to move the logo to the left */
+ 
+}
+
+.logo img {
+  height: 40px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-family: "sans-serif";
+  font-size: 50px;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(251, 251, 251);
+  min-width: 200px; /* Increase the width as desired */
+  border-radius: 10px;
+  z-index: 1;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Position the arrow above the dropdown */
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(96, 165, 250); /* Set arrow color */
+  border-bottom-color: transparent; /* Hide the bottom border */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  color: rgb(96, 165, 250);
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content hr {
+  margin: 0;
+  border: none;
+  height: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-image: linear-gradient(to right, rgb(139, 92, 246), rgb(96, 165, 250));
+  width: 100%;
+}
+
+
+
 @keyframes colorful {
   0% {
     filter: hue-rotate(0deg);
