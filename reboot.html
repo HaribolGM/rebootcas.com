@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reboot Main</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reboot.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div style="background-image: url(bg3.png);">
+    </div>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Home</button>
+        </div>
+        <div class="dropdown" onclick="openAboutUs()">
+          <button class="dropbtn">About Us</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Services</button>
+          <div class="dropdown-content">
+            <a href="services_Webdev_design.html">Web Development and Designing</a>
+            <a href="services_ComputerLaptop.html">Computer and Laptop Services</a>
+            <a href="services_Androiddev.html">Application Development</a>
+            <hr>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Projects</button>
+          <div class="dropdown-content">
+            <a href="#">Sub 1</a>
+            <a href="#">Sub 2</a>
+            <a href="#">Sub 3</a>
+            <hr>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Vision</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Contact Us</button>
+        </div>
+      </div>
+    </header>
+    
+  <section class="intro">
+    <div class="text-container">
+      <h5>Unlock the power of the web with our irresistible offers on professional web development, turning your ideas into stunning reality.
+        Take your online presence to new heights with our affordable web development services, crafted to impress and captivate your audience</h5>
+    </div>
+  </section>
+  
+
+  <hr class="short-hr">
+
+  <section class="contact-us">
+  <div class="wrapper">
+    <div class="form">
+      <div class="title">Contact Us</div>
+      <div class="subtitle"></div>
+      <div class="input-container ic1">
+        <input id="firstname" class="input" type="text" placeholder=" "required  />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">Name</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="email" class="input" type="text" placeholder=" "required  />
+        <div class="cut"></div>
+        <label for="email" class="placeholder">Email</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="address" class="input" type="text" placeholder=" "required  />
+        <div class="cut"></div>
+        <label for="address" class="placeholder">Address</label>
+      </div>
+      <div class="input-container ic2">
+        <input id="phone" class="input" type="text" placeholder=" " required />
+        <div class="cut"></div>
+        <label for="phone" class="placeholder">Phone</label>
+      </div>
+      <button type="text" class="submit">Submit</button>
+    </div>
+  </div>
+</section>
+  
+<hr class="short-hr">  
+
+<section class="main-home">
+    <div class ="main-text">
+    <h5>Winter collection</h5>
+    <h1> New Winter <br> Collections</h1>
+    <p> There's Nothing like Trend</p>
+    </div>
+    </section>
+
+<footer class="footer">
+     <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+</footer>
+
+<script>
+  function openAboutUs() {
+    window.location.href = "aboutus.html";
+  }
+</script>
+
+</body>
+</html>
